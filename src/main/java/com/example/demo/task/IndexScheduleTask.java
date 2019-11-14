@@ -13,12 +13,18 @@ import java.time.LocalDateTime;
 @EnableScheduling   // 2.开启定时任务
 public class IndexScheduleTask {
 
-    @Scheduled(cron = "0/5 * * * * ?")
+    @Scheduled(cron = "0/30 * * * * ?")
     public void configureTasks() {
 
         System.out.println("开始准备。。。 " + LocalDateTime.now());
         IndexController ic = new IndexController();
-        ic.email();
+        try{
+            ic.email();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 }
