@@ -9,7 +9,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class DemoApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(DemoApplication.class, args);
+        System.out.println("正在启动。。。。。。");
+
     }
 
 }
