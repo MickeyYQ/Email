@@ -11,8 +11,8 @@ public class SendEmail {
         Properties props = new Properties();
         SimpleMailMessage message = new SimpleMailMessage();
 
-        message.setFrom("");
-        message.setTo("");
+        message.setFrom("www.qiangzi_mickey@163.com");
+        message.setTo("www.qiangzi_mickey@163.com");
         message.setSubject("主题");
         message.setText("Test!");
         message.setSentDate(new Date());
